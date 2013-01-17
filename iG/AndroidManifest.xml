@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.highgic.ig"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens android:anyDensity="true" />
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.highgic.ig.IG" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IGList"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.highgic.ig.IGList" />
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".device.DisplayMetricsActivity"
+            android:label="@string/activity_display_metrics"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.highgic.ig.IGList" />
+
+                <category android:name="com.highgic.intent.category.IG_PATH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".update.UpdatePluginActivity"
+            android:label="@string/activity_update_plugin"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.highgic.intent.category.IG_PATH" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

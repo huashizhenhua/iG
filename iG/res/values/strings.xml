@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">iG</string>
+    <string name="activity_display_metrics"><b>屏幕分辨率和密度</b></string>
+    <string name="activity_update_plugin"><b>插件升级检测与下载</b></string>
+
+</resources>
