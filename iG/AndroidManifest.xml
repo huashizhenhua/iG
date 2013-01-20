@@ -80,8 +80,7 @@
                 <category android:name="com.highgic.intent.category.IG_PATH" />
             </intent-filter>
         </activity>
-        
-         <activity
+        <activity
             android:name=".device.AdbWifiConnection"
             android:label="@string/activity_adbwificonnection"
             android:windowSoftInputMode="adjustResize" >
@@ -91,8 +90,6 @@
                 <category android:name="com.highgic.intent.category.IG_PATH" />
             </intent-filter>
         </activity>
-        
-        
     </application>
 
 </manifest>

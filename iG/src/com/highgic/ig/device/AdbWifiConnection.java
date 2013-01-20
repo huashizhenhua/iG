@@ -63,21 +63,29 @@ public class AdbWifiConnection extends Activity {
             @Override
             public void run() {
                 Log.d("AdbWifiConnection", "start");
-                sb.append(execShellStr("su"));
-                Log.d("AdbWifiConnection", sb.toString());
-                sb.append(execShellStr(execShellStr("setprop service.adb.tcp.port 5555")));
-                Log.d("AdbWifiConnection", sb.toString());
-                sb.append(execShellStr(execShellStr("stop adbd")));
-                Log.d("AdbWifiConnection", sb.toString());
-                sb.append(execShellStr(execShellStr("start adbd")));
-                Log.d("AdbWifiConnection", sb.toString());
 
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        resultTextView.setText(sb.toString());
-                    }
-                });
+
+                //                sb.append(execShellStr("su"));
+                //                Log.d("AdbWifiConnection", sb.toString());
+                //                sb.append(execShellStr(execShellStr("setprop service.adb.tcp.port 5555")));
+                //                Log.d("AdbWifiConnection", sb.toString());
+                //                sb.append(execShellStr(execShellStr("stop adbd")));
+                //                Log.d("AdbWifiConnection", sb.toString());
+                //                sb.append(execShellStr(execShellStr("start adbd")));
+                //                Log.d("AdbWifiConnection", sb.toString());
+                //
+                //                runOnUiThread(new Runnable() {
+                //                    @Override
+                //                    public void run() {
+                //                        resultTextView.setText(sb.toString());
+                //                    }
+                //                });
+
+
+                RootCommand.command("setprop service.adb.tcp.port 5556");
+                RootCommand.command("stop adbd");
+                RootCommand.command("start adbd");
+
                 Log.d("AdbWifiConnection", "stop");
             }
         });
