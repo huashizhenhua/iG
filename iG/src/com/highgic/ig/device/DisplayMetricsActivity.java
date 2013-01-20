@@ -47,13 +47,13 @@ public class DisplayMetricsActivity extends Activity {
         int screenHeightPixels = dm.heightPixels; // 屏幕高（像素，如：800px）  
 
         Log.e(TAG + "  DisplayMetrics(111)", "screenWidthPixels=" + screenWidthPixels + "; screenHeightPixels=" + screenHeightPixels);
-        sb.append("screenWidthPixels=" + screenWidthPixels + "; screenHeightPixels=" + screenHeightPixels+"\n");
+        sb.append("screenWidthPixels=" + screenWidthPixels + "px; screenHeightPixels=" + screenHeightPixels+"px\n");
 
         int screenDensityWidth = (int) (dm.widthPixels / density + 0.5f); // 屏幕宽（dip，如：533dip）  
         int screenDensityHeight = (int) (dm.heightPixels / density + 0.5f); // 屏幕高（dip，如：800dip）  
 
-        Log.e(TAG + "  DisplayMetrics(222)", "screenDensityWidth=" + screenDensityWidth + "; screenDensityHeight=" + screenDensityHeight);
-        sb.append("screenDensityWidth=" + screenDensityWidth + "; screenDensityHeight=" + screenDensityHeight+"\n");
+        Log.e(TAG + "  DisplayMetrics(222)", "screenDensityWidth=" + screenDensityWidth + "dip; screenDensityHeight=" + screenDensityHeight+"dip;");
+        sb.append("screenDensityWidth=" + screenDensityWidth + "dip; screenDensityHeight=" + screenDensityHeight+"dip\n");
 
         
         TextView displayMetricsTextView = (TextView) findViewById(R.id.display_metrics_text);

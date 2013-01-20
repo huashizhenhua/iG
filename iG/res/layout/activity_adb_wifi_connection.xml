@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+
+    <Button
+        android:id="@+id/button_exec_shell"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Exec" />
+
+    <TextView
+        android:id="@+id/textview_shell_result"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:text="
+        su
+        setprop service.adb.tcp.port 5555
+        stop adbd
+        start adbd" />
+
+    <TextView
+        android:id="@+id/textview_exec_pc_shell"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="adb connect wifi.ip.address:5555" />
+
+</LinearLayout>
