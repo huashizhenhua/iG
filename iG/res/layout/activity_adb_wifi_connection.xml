@@ -4,27 +4,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-    
-    
-
     <Button
-        android:id="@+id/button_exec_shell"
+        android:id="@+id/network_adb_enable_button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Exec" />
+        android:text="Enable" />
+    
+    <Button
+        android:id="@+id/network_adb_disable_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Disable" />
 
     <TextView
-        android:id="@+id/textview_shell_result"
+        android:id="@+id/network_adb_result_textview"
         android:layout_width="fill_parent"
         android:layout_height="200dp"
-        android:text="
-        su
+        android:text="su
         setprop service.adb.tcp.port 5555
         stop adbd
         start adbd" />
 
     <TextView
-        android:id="@+id/textview_exec_pc_shell"
+        android:id="@+id/network_adb_cmd_textview"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="adb connect wifi.ip.address:5555" />

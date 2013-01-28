@@ -8,7 +8,7 @@ package org.apache.cordova;
 
 public final class R {
 	public static final class id {
-		public static final int appView = 0x7f070011;
+		public static final int appView = 0x7f070012;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f050000;

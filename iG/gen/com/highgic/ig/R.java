@@ -16,24 +16,25 @@ public final class R {
         public static final int splash=0x7f020002;
     }
     public static final class id {
-        public static final int appView=0x7f070011;
-        public static final int button_exec_shell=0x7f070000;
-        public static final int cancel_button=0x7f07000e;
-        public static final int cordovaWebView=0x7f07000b;
-        public static final int display_metrics_text=0x7f070003;
-        public static final int drobot_cancel_button=0x7f070010;
-        public static final int drobot_ok_button=0x7f07000f;
-        public static final int drobot_progressbar=0x7f070005;
-        public static final int drobot_progressbar_layout=0x7f070004;
-        public static final int drobot_start_button=0x7f070006;
-        public static final int drobot_stop_button=0x7f070007;
-        public static final int ig_button=0x7f070009;
-        public static final int ok_button=0x7f07000d;
-        public static final int progressBarLayout=0x7f07000c;
-        public static final int textView1=0x7f07000a;
-        public static final int textview_exec_pc_shell=0x7f070002;
-        public static final int textview_ig_title=0x7f070008;
-        public static final int textview_shell_result=0x7f070001;
+        public static final int appView=0x7f070012;
+        public static final int cancel_button=0x7f07000f;
+        public static final int cordovaWebView=0x7f07000c;
+        public static final int display_metrics_text=0x7f070004;
+        public static final int drobot_cancel_button=0x7f070011;
+        public static final int drobot_ok_button=0x7f070010;
+        public static final int drobot_progressbar=0x7f070006;
+        public static final int drobot_progressbar_layout=0x7f070005;
+        public static final int drobot_start_button=0x7f070007;
+        public static final int drobot_stop_button=0x7f070008;
+        public static final int ig_button=0x7f07000a;
+        public static final int network_adb_cmd_textview=0x7f070003;
+        public static final int network_adb_disable_button=0x7f070001;
+        public static final int network_adb_enable_button=0x7f070000;
+        public static final int network_adb_result_textview=0x7f070002;
+        public static final int ok_button=0x7f07000e;
+        public static final int progressBarLayout=0x7f07000d;
+        public static final int textView1=0x7f07000b;
+        public static final int textview_ig_title=0x7f070009;
     }
     public static final class layout {
         public static final int activity_adb_wifi_connection=0x7f030000;
