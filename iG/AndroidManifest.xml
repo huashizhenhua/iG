@@ -25,6 +25,11 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -81,7 +86,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.highgic.ig.device.NetworkAdbConnection"
+            android:name=".device.NetworkAdbConnection"
             android:label="@string/activity_adbwificonnection"
             android:windowSoftInputMode="adjustResize" >
             <intent-filter>
@@ -90,6 +95,43 @@
                 <category android:name="com.highgic.intent.category.IG_PATH" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".qrcode.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/activity_capture"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.highgic.intent.category.IG_PATH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".qrcode.ResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".activitylifecycle.Activity1"
+             android:label="@string/activity_lifecycle"
+            android:screenOrientation="portrait" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.highgic.intent.category.IG_PATH" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name=".activitylifecycle.Activity2"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        
+        
     </application>
 
 </manifest>

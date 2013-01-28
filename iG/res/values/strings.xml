@@ -5,5 +5,9 @@
     <string name="activity_update_plugin"><b>插件升级检测与下载</b></string>
     <string name="activity_wish"><b>祝福</b></string>
     <string name="activity_adbwificonnection"><b>使用wifi连接adb调试手机</b></string>
+    <string name="activity_capture"><b>二维码扫描</b></string>
+     <string name="activity_lifecycle"><b>生命周期展示</b></string>
+    
+    
 
 </resources>
