@@ -99,12 +99,13 @@ public class NetworkAdbConnection extends Activity {
      * @return
      */
     private void enableFeature(final boolean isEnable) {
-        Thread  t = new Thread(new Runnable() {
+        Thread  t;
+        t = new Thread(new Runnable() {
 
             @Override
             public void run() {
                 Log.d(TAG, "start");
-                
+
                 mHandler.sendEmptyMessage(1);
 
                 if (isEnable) {
@@ -117,8 +118,8 @@ public class NetworkAdbConnection extends Activity {
                 RootCommand.command("start adbd");
 
                 Log.d(TAG, "stop");
-                
-               
+
+
                 mHandler.sendEmptyMessage(2);
 
             }

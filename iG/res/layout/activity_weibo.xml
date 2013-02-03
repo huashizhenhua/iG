@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/auth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="微博登录"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/show_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/auth_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/auth_button"
+        android:text="注销"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/weibo_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/show_textview"
+        android:layout_alignRight="@id/show_textview"
+        android:layout_below="@id/show_textview"
+        android:layout_marginTop="20dp"
+        android:ems="50"
+        android:lines="6"
+        android:visibility="invisible" >
+    </EditText>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weibo_edittext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/auth_button"
+        android:text="发送"
+        android:visibility="invisible" />
+
+</RelativeLayout>

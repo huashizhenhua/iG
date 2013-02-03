@@ -21,4 +21,6 @@ Thumbs.db
 
 
 bin/
-
+out/
+.idea/
+*.iml
